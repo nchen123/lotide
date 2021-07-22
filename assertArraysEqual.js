@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (array1.length !== array2.length) {
     return (`Assertion Failed: ${array1} !== ${array2}`);
     }
@@ -9,7 +9,7 @@ const eqArrays = function(array1, array2) {
     } 
     return (`Assertion Passed: ${array1} === ${array2}`);
 }
-console.log(eqArrays([1, 2, 3], [1, 2, 3]))
-console.log(eqArrays([1, 2, 3], [3, 2, 1]))
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]))
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]))
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
+console.log(assertArraysEqual([1, 2, 3], [3, 2, 1]))
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]))
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3]))
